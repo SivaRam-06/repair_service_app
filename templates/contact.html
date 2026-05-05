@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - QuickFix</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- AOS for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     SIDEBAR (Offcanvas)
+══════════════════════════════════════════════ -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="profileSidebar">
+  <div class="offcanvas-header border-bottom pb-3">
+    <h6 class="offcanvas-title fw-bold">👤 My Account</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <!-- User info -->
+    <div class="px-4 py-4 d-flex align-items-center gap-3 border-bottom mb-2 bg-light">
+      <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px;">A</div>
+      <div>
+        <div class="fw-bold">Arjun Sharma</div>
+        <div class="text-muted small">arjun@email.com</div>
+        <span class="badge bg-warning text-dark mt-1 small">⭐ Premium Member</span>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="px-3 py-2">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-person-circle"></i> My Profile</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-bag-check"></i> My Orders</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-clock-history"></i> Booking History</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-geo-alt"></i> Saved Addresses</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-bell"></i> Notifications <span class="badge bg-warning ms-auto">3</span></a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-wallet2"></i> Wallet / Payments</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-tag"></i> Offers & Coupons</a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-gear"></i> Settings</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-question-circle"></i> Help & Support</a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark text-danger"><i class="bi bi-box-arrow-right"></i> Logout</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold fs-4 text-dark me-4" href="index.html">
+      🛠️ Quick<span class="text-warning">Fix</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bike-repair.html"><i class="bi bi-bicycle me-2 text-warning"></i>Bike Repair</a></li>
+            <li><a class="dropdown-item" href="car-service.html"><i class="bi bi-car-front me-2 text-primary"></i>Car Service</a></li>
+            <li><a class="dropdown-item" href="ac-repair.html"><i class="bi bi-wind me-2 text-info"></i>AC Repair</a></li>
+            <li><a class="dropdown-item" href="laptop-repair.html"><i class="bi bi-laptop me-2 text-secondary"></i>Laptop Repair</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="plumbing.html"><i class="bi bi-droplet me-2 text-primary"></i>Plumbing</a></li>
+            <li><a class="dropdown-item" href="electrician.html"><i class="bi bi-lightning me-2 text-warning"></i>Electrician</a></li>
+            <li><a class="dropdown-item" href="washing-machine.html"><i class="bi bi-water me-2 text-info"></i>Washing Machine</a></li>
+            <li><a class="dropdown-item" href="refrigerator.html"><i class="bi bi-thermometer-snow me-2 text-info"></i>Refrigerator</a></li>
+            <li><a class="dropdown-item" href="cleaning.html"><i class="bi bi-brush me-2 text-success"></i>Cleaning</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Become Partner</a></li>
+        <li class="nav-item"><a class="nav-link active fw-semibold" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+        <button class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;"><i class="bi bi-search"></i></button>
+        <button class="btn btn-outline-secondary btn-sm rounded-circle position-relative d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;">
+          <i class="bi bi-bell"></i>
+          <span class="position-absolute top-0 end-0 badge rounded-pill bg-warning text-dark" style="font-size:.55rem;padding:3px 5px;">2</span>
+        </button>
+        <a href="#" class="btn btn-warning fw-bold ms-1 rounded-pill px-3">Book Now</a>
+        <button class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" data-bs-toggle="offcanvas" data-bs-target="#profileSidebar">
+          <i class="bi bi-person-circle"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════════════ -->
+<section class="py-5 bg-gradient" style="background: linear-gradient(135deg, #ffffff 58%, #FFF5F0 100%); min-height: 60vh; display: flex; align-items: center;">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Left -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+        <span class="badge bg-warning text-dark px-3 py-2 mb-3 fs-6">📞 Get In Touch</span>
+        <h1 class="display-4 fw-bold mb-4 lh-1">
+          We're Here to <span class="text-warning">Help You</span>
+        </h1>
+        <p class="lead mb-5 text-muted">
+          Have questions or need assistance? Reach out to our support team anytime. We're available 24/7 to help.
+        </p>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex align-items-start gap-3" data-aos="fade-up">
+            <i class="bi bi-telephone-fill text-warning fs-5 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Call Us</h6>
+              <p class="text-muted mb-0">+91 9876543210</p>
+              <p class="text-muted small">Mon - Sun, 8 AM - 11 PM</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-envelope-fill text-warning fs-5 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Email Us</h6>
+              <p class="text-muted mb-0">support@quickfix.com</p>
+              <p class="text-muted small">We'll respond within 2 hours</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt-fill text-warning fs-5 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Visit Us</h6>
+              <p class="text-muted mb-0">QuickFix Service Center</p>
+              <p class="text-muted small">123 Main Street, City Center</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right – Contact Form -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+        <div class="card border-0 shadow-lg p-4">
+          <h5 class="card-title fw-bold mb-4">Send us a Message</h5>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">Full Name</label>
+              <input type="text" class="form-control rounded-3" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email Address</label>
+              <input type="email" class="form-control rounded-3" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-semibold">Phone Number</label>
+              <input type="tel" class="form-control rounded-3" id="phone" placeholder="Enter your phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="service" class="form-label fw-semibold">Service Type</label>
+              <select class="form-select rounded-3" id="service" required>
+                <option selected disabled>Select a service</option>
+                <option>Bike Repair</option>
+                <option>Car Service</option>
+                <option>AC Repair</option>
+                <option>Laptop Repair</option>
+                <option>Plumbing</option>
+                <option>Electrician</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control rounded-3" id="message" rows="4" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold rounded-3">
+              <i class="bi bi-send-fill me-2"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT INFO CARDS
+══════════════════════════════════════════════ -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Why Choose QuickFix?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center p-4 border-0 shadow-sm h-100" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-lightning-charge-fill text-warning fs-1 mb-3"></i>
+          <h5 class="card-title fw-bold mb-3">Fast Response</h5>
+          <p class="card-text text-muted">Get expert help within 60 minutes. Our team is always ready to assist you with quick solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4 border-0 shadow-sm h-100" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-shield-check text-warning fs-1 mb-3"></i>
+          <h5 class="card-title fw-bold mb-3">100% Safe</h5>
+          <p class="card-text text-muted">All technicians are verified and insured. Your satisfaction is guaranteed with our quality promise.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4 border-0 shadow-sm h-100" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-wallet2 text-warning fs-1 mb-3"></i>
+          <h5 class="card-title fw-bold mb-3">Transparent Pricing</h5>
+          <p class="card-text text-muted">No hidden charges. You know the exact cost before booking. Easy payment options available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FAQ SECTION
+══════════════════════════════════════════════ -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Frequently Asked Questions</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How do I book a service?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Booking is simple! Visit our website, select your service, choose a technician, and confirm your booking. You'll receive a confirmation SMS within minutes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                What are your service hours?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We're available 24/7 for emergencies. Our regular service hours are 8 AM to 11 PM every day. Emergency services have an additional charge.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Is there a warranty on services?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! All our repairs come with a 30-day warranty. If the issue persists, we'll fix it for free within the warranty period.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow-sm" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                What payment methods do you accept?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We accept Cash, Credit Card, Debit Card, UPI, and Digital Wallets. You can also pay through our secure online platform.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CTA SECTION
+══════════════════════════════════════════════ -->
+<section class="bg-warning py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3" data-aos="fade-up">Ready to Get Started?</h2>
+    <p class="lead mb-4 text-dark" data-aos="fade-up" data-aos-delay="100">Book your service today and experience the QuickFix difference.</p>
+    <a href="index.html" class="btn btn-dark btn-lg px-5 fw-bold rounded-pill" data-aos="fade-up" data-aos-delay="200">
+      <i class="bi bi-lightning-charge-fill me-2"></i> Book Now
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; 2024 QuickFix. All rights reserved.</p>
+    <p>Making repairs quick, easy, and reliable.</p>
+    <div class="mt-3">
+      <a href="#" class="text-warning me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-warning me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-warning me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-warning"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
