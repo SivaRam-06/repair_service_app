@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickFix – Book Trusted Repair Experts Near You</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- AOS for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     SIDEBAR (Offcanvas)
+══════════════════════════════════════════════ -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="profileSidebar">
+  <div class="offcanvas-header border-bottom pb-3">
+    <h6 class="offcanvas-title fw-bold">👤 My Account</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <!-- User info -->
+    <div class="px-4 py-4 d-flex align-items-center gap-3 border-bottom mb-2 bg-light">
+      <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px;">A</div>
+      <div>
+        <div class="fw-bold">Arjun Sharma</div>
+        <div class="text-muted small">arjun@email.com</div>
+        <span class="badge bg-warning text-dark mt-1 small">⭐ Premium Member</span>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="px-3 py-2">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-person-circle"></i> My Profile</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-bag-check"></i> My Orders</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-clock-history"></i> Booking History</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-geo-alt"></i> Saved Addresses</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-bell"></i> Notifications <span class="badge bg-warning ms-auto">3</span></a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-wallet2"></i> Wallet / Payments</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-tag"></i> Offers & Coupons</a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-gear"></i> Settings</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-question-circle"></i> Help & Support</a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark text-danger"><i class="bi bi-box-arrow-right"></i> Logout</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold fs-4 text-dark me-4" href="index.html">
+      🛠️ Quick<span class="text-warning">Fix</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link active fw-semibold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bike-repair.html"><i class="bi bi-bicycle me-2 text-warning"></i>Bike Repair</a></li>
+            <li><a class="dropdown-item" href="car-service.html"><i class="bi bi-car-front me-2 text-primary"></i>Car Service</a></li>
+            <li><a class="dropdown-item" href="ac-repair.html"><i class="bi bi-wind me-2 text-info"></i>AC Repair</a></li>
+            <li><a class="dropdown-item" href="laptop-repair.html"><i class="bi bi-laptop me-2 text-secondary"></i>Laptop Repair</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="plumbing.html"><i class="bi bi-droplet me-2 text-primary"></i>Plumbing</a></li>
+            <li><a class="dropdown-item" href="electrician.html"><i class="bi bi-lightning me-2 text-warning"></i>Electrician</a></li>
+            <li><a class="dropdown-item" href="washing-machine.html"><i class="bi bi-water me-2 text-info"></i>Washing Machine</a></li>
+            <li><a class="dropdown-item" href="refrigerator.html"><i class="bi bi-thermometer-snow me-2 text-info"></i>Refrigerator</a></li>
+            <li><a class="dropdown-item" href="cleaning.html"><i class="bi bi-brush me-2 text-success"></i>Cleaning</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Become Partner</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#">Contact</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+        <button class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;"><i class="bi bi-search"></i></button>
+        <button class="btn btn-outline-secondary btn-sm rounded-circle position-relative d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;">
+          <i class="bi bi-bell"></i>
+          <span class="position-absolute top-0 end-0 badge rounded-pill bg-warning text-dark" style="font-size:.55rem;padding:3px 5px;">2</span>
+        </button>
+        <a href="#bookingCard" class="btn btn-warning fw-bold ms-1 rounded-pill px-3">Book Now</a>
+        <button class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" data-bs-toggle="offcanvas" data-bs-target="#profileSidebar">
+          <i class="bi bi-person-circle"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════════════ -->
+<section class="py-5 bg-gradient" style="background: linear-gradient(135deg, #ffffff 58%, #FFF5F0 100%); min-height: 94vh; display: flex; align-items: center;">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Left -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+        <span class="badge bg-warning text-dark px-3 py-2 mb-3 fs-6">🚀 #1 Repair Platform in India</span>
+        <h1 class="display-4 fw-bold mb-4 lh-1">
+          Book <span class="text-warning">Trusted</span> Repair Experts <span class="text-warning">Near You</span>
+        </h1>
+        <p class="lead mb-5 text-muted">
+          Fast doorstep repair service for bikes, cars, appliances, AC, laptop, plumbing and more. Verified experts at your door in under 60 minutes.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mb-5">
+          <a href="#bookingCard" class="btn btn-warning btn-lg px-4 rounded-pill fw-bold">
+            <i class="bi bi-lightning-charge-fill me-1"></i> Book Service
+          </a>
+          <a href="#services" class="btn btn-outline-secondary btn-lg px-4 rounded-pill fw-semibold">
+            Explore Services <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+        <!-- Trust badges -->
+        <div class="d-flex flex-wrap gap-4 mb-4">
+          <span class="text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Verified Mechanics</span>
+          <span class="text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Fast Booking</span>
+          <span class="text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> Affordable Pricing</span>
+        </div>
+        <!-- Stats -->
+        <div class="row g-3">
+          <div class="col-4">
+            <div class="h4 fw-bold text-dark mb-1">50K+</div>
+            <div class="text-muted small">Happy Customers</div>
+          </div>
+          <div class="col-4">
+            <div class="h4 fw-bold text-dark mb-1">1200+</div>
+            <div class="text-muted small">Expert Mechanics</div>
+          </div>
+          <div class="col-4">
+            <div class="h4 fw-bold text-dark mb-1">4.9★</div>
+            <div class="text-muted small">Average Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right – Floating grid -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+        <div class="d-grid" style="grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 400px; margin: auto;">
+          <div class="card text-center p-3 border-0 shadow-sm bg-warning text-white">
+            <i class="bi bi-tools fs-4 mb-2"></i>
+            <span class="fw-bold small">Repairs</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm">
+            <i class="bi bi-bicycle fs-4 mb-2 text-warning"></i>
+            <span class="fw-bold small">Bike</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm">
+            <i class="bi bi-car-front fs-4 mb-2 text-primary"></i>
+            <span class="fw-bold small">Car</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm">
+            <i class="bi bi-laptop fs-4 mb-2 text-secondary"></i>
+            <span class="fw-bold small">Laptop</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm bg-warning text-white">
+            <i class="bi bi-wind fs-4 mb-2"></i>
+            <span class="fw-bold small">AC</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm">
+            <i class="bi bi-house-gear fs-4 mb-2 text-success"></i>
+            <span class="fw-bold small">Home</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm">
+            <i class="bi bi-lightning fs-4 mb-2 text-danger"></i>
+            <span class="fw-bold small">Electric</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm">
+            <i class="bi bi-droplet fs-4 mb-2 text-info"></i>
+            <span class="fw-bold small">Plumbing</span>
+          </div>
+          <div class="card text-center p-3 border-0 shadow-sm bg-warning text-white">
+            <i class="bi bi-shield-check fs-4 mb-2"></i>
+            <span class="fw-bold small">Trusted</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     BOOKING CARD
+══════════════════════════════════════════════ -->
+<section class="py-5 position-relative" style="margin-top: -55px; z-index: 20;">
+  <div class="container" id="bookingCard">
+    <div class="card shadow-lg border-0 rounded-4 p-4 p-md-5" data-aos="fade-up" data-aos-duration="700">
+      <div class="text-center mb-4">
+        <span class="text-warning text-uppercase fw-bold small mb-2 d-block">Quick Booking</span>
+        <h3 class="h2 fw-bold">Book a Repair in 60 Seconds</h3>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <select class="form-select form-select-lg rounded-3">
+            <option value="" disabled selected>🔧 Select Service</option>
+            <option>Bike Repair</option>
+            <option>Car Service</option>
+            <option>AC Repair</option>
+            <option>Laptop Repair</option>
+            <option>Plumbing</option>
+            <option>Electrician</option>
+            <option>Washing Machine</option>
+            <option>Refrigerator</option>
+            <option>Cleaning</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control form-control-lg rounded-3" placeholder="📍 Enter your address" />
+        </div>
+        <div class="col-md-4">
+          <input type="date" class="form-control form-control-lg rounded-3" />
+        </div>
+        <div class="col-md-4">
+          <select class="form-select form-select-lg rounded-3">
+            <option disabled selected>🕐 Select Time Slot</option>
+            <option>9:00 AM – 11:00 AM</option>
+            <option>11:00 AM – 1:00 PM</option>
+            <option>2:00 PM – 4:00 PM</option>
+            <option>4:00 PM – 6:00 PM</option>
+            <option>6:00 PM – 8:00 PM</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <input type="text" class="form-control form-control-lg rounded-3" placeholder="📝 Describe the problem (optional)" />
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-warning w-100 py-3 rounded-3 fw-bold fs-5">
+            <i class="bi bi-lightning-charge-fill me-1"></i> Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     WHY CHOOSE US
+══════════════════════════════════════════════ -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-warning text-uppercase fw-bold small mb-2 d-block">Why QuickFix</span>
+      <h2 class="h1 fw-bold">India's Most Trusted Repair Platform</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="bg-warning bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3" style="width: 58px; height: 58px;">
+            <i class="bi bi-shield-check text-warning fs-4"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Verified Experts</h5>
+          <p class="text-muted small mb-0">All mechanics are background-checked, trained & verified before onboarding.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="bg-warning bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3" style="width: 58px; height: 58px;">
+            <i class="bi bi-lightning-charge text-warning fs-4"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Instant Booking</h5>
+          <p class="text-muted small mb-0">Book in 60 seconds. Get a confirmed mechanic within minutes, 24/7.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="bg-warning bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3" style="width: 58px; height: 58px;">
+            <i class="bi bi-currency-rupee text-warning fs-4"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Affordable Pricing</h5>
+          <p class="text-muted small mb-0">Transparent pricing. No hidden charges. Pay only after the job is done.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="bg-warning bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3" style="width: 58px; height: 58px;">
+            <i class="bi bi-house-heart text-warning fs-4"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Doorstep Service</h5>
+          <p class="text-muted small mb-0">Expert comes to your door. No travel hassle. Repairs done at your home.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════════ -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-warning text-uppercase fw-bold small mb-2 d-block">Simple Process</span>
+      <h2 class="h1 fw-bold">How QuickFix Works</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="card text-center border-0 shadow-sm p-4 h-100">
+          <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-3" style="width: 48px; height: 48px;">1</div>
+          <div class="bg-warning bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 58px; height: 58px;">
+            <i class="bi bi-hand-index-thumb text-warning fs-4"></i>
+          </div>
+          <h6 class="fw-bold mb-3">Choose Service</h6>
+          <p class="text-muted small mb-0">Select the service you need and enter your address & time.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card text-center border-0 shadow-sm p-4 h-100">
+          <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-3" style="width: 48px; height: 48px;">2</div>
+          <div class="bg-warning bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 58px; height: 58px;">
+            <i class="bi bi-person-check text-warning fs-4"></i>
+          </div>
+          <h6 class="fw-bold mb-3">Mechanic Accepts</h6>
+          <p class="text-muted small mb-0">A nearby verified expert accepts your request and gets ready.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="card text-center border-0 shadow-sm p-4 h-100">
+          <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-3" style="width: 48px; height: 48px;">3</div>
+          <div class="bg-warning bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 58px; height: 58px;">
+            <i class="bi bi-geo-alt text-warning fs-4"></i>
+          </div>
+          <h6 class="fw-bold mb-3">Track Arrival</h6>
+          <p class="text-muted small mb-0">Track your mechanic live on map. Get real-time ETA updates.</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="card text-center border-0 shadow-sm p-4 h-100">
+          <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mx-auto mb-3" style="width: 48px; height: 48px;">4</div>
+          <div class="bg-success bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 58px; height: 58px;">
+            <i class="bi bi-check-circle text-success fs-4"></i>
+          </div>
+          <h6 class="fw-bold mb-3">Repair Done!</h6>
+          <p class="text-muted small mb-0">Expert fixes the issue. Rate & pay securely. Enjoy your device!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FEATURED SERVICES PREVIEW
+══════════════════════════════════════════════ -->
+<section id="services" class="py-5">
+  <div class="container">
+    <div class="d-flex align-items-end justify-content-between mb-5 flex-wrap gap-3">
+      <div data-aos="fade-right">
+        <span class="text-warning text-uppercase fw-bold small mb-2 d-block">Popular Services</span>
+        <h2 class="h1 fw-bold mb-0">Our Top Repair Services</h2>
+      </div>
+      <a href="#" class="btn btn-outline-secondary rounded-pill fw-semibold" data-aos="fade-left">
+        View All Services <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+    <div class="row g-4">
+      <!-- Bike -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="card border-0 shadow-sm p-4 h-100 text-center">
+          <div class="d-flex align-items-center justify-content-center mb-3" style="height: 95px;">
+            <span style="font-size: 3.5rem;">🏍️</span>
+          </div>
+          <h5 class="fw-bold mt-2 mb-3">Bike Repair</h5>
+          <p class="text-muted small mb-4">Engine tune-up, puncture fix, oil change, battery & more at your doorstep.</p>
+          <a href="bike-repair.html" class="btn btn-warning w-100 rounded-pill">Explore</a>
+        </div>
+      </div>
+      <!-- Car -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="card border-0 shadow-sm p-4 h-100 text-center">
+          <div class="d-flex align-items-center justify-content-center mb-3" style="height: 95px;">
+            <span style="font-size: 3.5rem;">🚗</span>
+          </div>
+          <h5 class="fw-bold mt-2 mb-3">Car Service</h5>
+          <p class="text-muted small mb-4">Full service, AC check, tyre change, denting, painting & more.</p>
+          <a href="car-service.html" class="btn btn-warning w-100 rounded-pill">Explore</a>
+        </div>
+      </div>
+      <!-- AC -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="card border-0 shadow-sm p-4 h-100 text-center">
+          <div class="d-flex align-items-center justify-content-center mb-3" style="height: 95px;">
+            <span style="font-size: 3.5rem;">❄️</span>
+          </div>
+          <h5 class="fw-bold mt-2 mb-3">AC Repair</h5>
+          <p class="text-muted small mb-4">Gas refill, deep cleaning, not cooling fix, installation & uninstallation.</p>
+          <a href="ac-repair.html" class="btn btn-warning w-100 rounded-pill">Explore</a>
+        </div>
+      </div>
+      <!-- Laptop -->
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="card border-0 shadow-sm p-4 h-100 text-center">
+          <div class="d-flex align-items-center justify-content-center mb-3" style="height: 95px;">
+            <span style="font-size: 3.5rem;">💻</span>
+          </div>
+          <h5 class="fw-bold mt-2 mb-3">Laptop Repair</h5>
+          <p class="text-muted small mb-4">Screen fix, OS install, virus removal, battery & keyboard replacement.</p>
+          <a href="laptop-repair.html" class="btn btn-warning w-100 rounded-pill">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ═══════════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════════════ -->
+<section class="py-5">
+  <div class="container">
+    <div class="bg-warning text-white text-center rounded-4 px-4 py-5" data-aos="zoom-in">
+      <div class="badge bg-white bg-opacity-25 text-white px-3 py-2 mb-3 rounded-pill small fw-semibold">⚡ Instant Service Available</div>
+      <h2 class="h1 fw-bold mb-3">Need Urgent Repair Today?</h2>
+      <p class="lead mb-4 opacity-90 mx-auto" style="max-width: 480px;">Book now and get a verified expert at your doorstep within 60 minutes. Available 24/7.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#bookingCard" class="btn btn-light btn-lg px-5 rounded-pill fw-bold text-warning">
+          <i class="bi bi-lightning-charge-fill me-2"></i>Book Now
+        </a>
+        <a href="tel:+919999999999" class="btn btn-outline-light btn-lg px-4 rounded-pill fw-semibold">
+          <i class="bi bi-telephone-fill me-2"></i>Call Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="bg-dark text-light py-5 mt-2">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <!-- Brand -->
+      <div class="col-lg-4">
+        <div class="h4 fw-bold mb-3 text-white">🛠️ Quick<span class="text-warning">Fix</span></div>
+        <p class="small mb-4 lh-base" style="max-width: 280px;">India's most trusted doorstep repair service platform. Verified experts, transparent pricing, and 60-minute response.</p>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <!-- Company -->
+      <div class="col-sm-4 col-lg-2">
+        <h6 class="text-white fw-bold mb-3">Company</h6>
+        <a href="#" class="d-block text-decoration-none small mb-2">About Us</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Careers</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Blog</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Press</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Become a Partner</a>
+      </div>
+      <!-- Services -->
+      <div class="col-sm-4 col-lg-2">
+        <h6 class="text-white fw-bold mb-3">Services</h6>
+        <a href="bike-repair.html" class="d-block text-decoration-none small mb-2">Bike Repair</a>
+        <a href="car-service.html" class="d-block text-decoration-none small mb-2">Car Service</a>
+        <a href="ac-repair.html" class="d-block text-decoration-none small mb-2">AC Repair</a>
+        <a href="laptop-repair.html" class="d-block text-decoration-none small mb-2">Laptop Repair</a>
+        <a href="plumbing.html" class="d-block text-decoration-none small mb-2">Plumbing</a>
+        <a href="electrician.html" class="d-block text-decoration-none small mb-2">Electrician</a>
+      </div>
+      <!-- Support -->
+      <div class="col-sm-4 col-lg-2">
+        <h6 class="text-white fw-bold mb-3">Support</h6>
+        <a href="#" class="d-block text-decoration-none small mb-2">Help Center</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Track Order</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Cancellation</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Refund Policy</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Terms of Service</a>
+        <a href="#" class="d-block text-decoration-none small mb-2">Privacy Policy</a>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-2">
+        <h6 class="text-white fw-bold mb-3">Contact</h6>
+        <a href="tel:+919999999999" class="d-block text-decoration-none small mb-2"><i class="bi bi-telephone me-1"></i> +91 99999 99999</a>
+        <a href="mailto:support@quickfix.in" class="d-block text-decoration-none small mb-2"><i class="bi bi-envelope me-1"></i> support@quickfix.in</a>
+        <a href="#" class="d-block text-decoration-none small mb-2"><i class="bi bi-geo-alt me-1"></i> Hyderabad, India</a>
+        <div class="mt-3">
+          <img src="https://placehold.co/130x40/111318/ffffff?text=App+Store" class="rounded-2 mb-2 d-block" style="width:130px;" alt="App Store" />
+          <img src="https://placehold.co/130x40/111318/ffffff?text=Google+Play" class="rounded-2 d-block" style="width:130px;" alt="Google Play" />
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 pt-2">
+      <p class="small mb-0">© 2026 QuickFix. All Rights Reserved. Made with ❤️ in India</p>
+      <div class="d-flex gap-3">
+        <a href="#" class="small text-decoration-none">Privacy</a>
+        <a href="#" class="small text-decoration-none">Terms</a>
+        <a href="#" class="small text-decoration-none">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true, offset: 60, duration: 700, easing: 'ease-out-cubic' });
+</script>
+</body>
+</html>
