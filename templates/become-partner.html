@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Partner - QuickFix</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- AOS for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     SIDEBAR (Offcanvas)
+══════════════════════════════════════════════ -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="profileSidebar">
+  <div class="offcanvas-header border-bottom pb-3">
+    <h6 class="offcanvas-title fw-bold">👤 My Account</h6>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body p-0">
+    <!-- User info -->
+    <div class="px-4 py-4 d-flex align-items-center gap-3 border-bottom mb-2 bg-light">
+      <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px;">A</div>
+      <div>
+        <div class="fw-bold">Arjun Sharma</div>
+        <div class="text-muted small">arjun@email.com</div>
+        <span class="badge bg-warning text-dark mt-1 small">⭐ Premium Member</span>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="px-3 py-2">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-person-circle"></i> My Profile</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-bag-check"></i> My Orders</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-clock-history"></i> Booking History</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-geo-alt"></i> Saved Addresses</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-bell"></i> Notifications <span class="badge bg-warning ms-auto">3</span></a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-wallet2"></i> Wallet / Payments</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-tag"></i> Offers & Coupons</a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-gear"></i> Settings</a>
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark"><i class="bi bi-question-circle"></i> Help & Support</a>
+      <hr class="my-3">
+      <a href="#" class="d-flex align-items-center gap-3 p-3 text-decoration-none rounded mb-1 text-dark text-danger"><i class="bi bi-box-arrow-right"></i> Logout</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold fs-4 text-dark me-4" href="index.html">
+      🛠️ Quick<span class="text-warning">Fix</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bike-repair.html"><i class="bi bi-bicycle me-2 text-warning"></i>Bike Repair</a></li>
+            <li><a class="dropdown-item" href="car-service.html"><i class="bi bi-car-front me-2 text-primary"></i>Car Service</a></li>
+            <li><a class="dropdown-item" href="ac-repair.html"><i class="bi bi-wind me-2 text-info"></i>AC Repair</a></li>
+            <li><a class="dropdown-item" href="laptop-repair.html"><i class="bi bi-laptop me-2 text-secondary"></i>Laptop Repair</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="plumbing.html"><i class="bi bi-droplet me-2 text-primary"></i>Plumbing</a></li>
+            <li><a class="dropdown-item" href="electrician.html"><i class="bi bi-lightning me-2 text-warning"></i>Electrician</a></li>
+            <li><a class="dropdown-item" href="washing-machine.html"><i class="bi bi-water me-2 text-info"></i>Washing Machine</a></li>
+            <li><a class="dropdown-item" href="refrigerator.html"><i class="bi bi-thermometer-snow me-2 text-info"></i>Refrigerator</a></li>
+            <li><a class="dropdown-item" href="cleaning.html"><i class="bi bi-brush me-2 text-success"></i>Cleaning</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active fw-semibold" href="become-partner.html">Become Partner</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right controls -->
+      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+        <button class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;"><i class="bi bi-search"></i></button>
+        <button class="btn btn-outline-secondary btn-sm rounded-circle position-relative d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;">
+          <i class="bi bi-bell"></i>
+          <span class="position-absolute top-0 end-0 badge rounded-pill bg-warning text-dark" style="font-size:.55rem;padding:3px 5px;">2</span>
+        </button>
+        <a href="#" class="btn btn-warning fw-bold ms-1 rounded-pill px-3">Book Now</a>
+        <button class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 42px; height: 42px;" data-bs-toggle="offcanvas" data-bs-target="#profileSidebar">
+          <i class="bi bi-person-circle"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════════════ -->
+<section class="py-5 bg-gradient" style="background: linear-gradient(135deg, #ffffff 58%, #FFF5F0 100%); min-height: 60vh; display: flex; align-items: center;">
+  <div class="container">
+    <div class="row align-items-start g-5">
+      <!-- Left -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+        <span class="badge bg-warning text-dark px-3 py-2 mb-3 fs-6">🤝 Join Our Network</span>
+        <h1 class="display-4 fw-bold mb-4 lh-1">
+          Become a <span class="text-warning">QuickFix Partner</span>
+        </h1>
+        <p class="lead mb-5 text-muted">
+          Join thousands of skilled technicians who are building successful businesses with QuickFix. Get more customers, better earnings, and flexible work.
+        </p>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex align-items-start gap-3" data-aos="fade-up">
+            <i class="bi bi-cash-stack text-warning fs-5 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Higher Earnings</h6>
+              <p class="text-muted mb-0">Keep 70% of service charges</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-calendar-check text-warning fs-5 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Flexible Schedule</h6>
+              <p class="text-muted mb-0">Work when you want</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-graph-up text-warning fs-5 mt-1"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Steady Income</h6>
+              <p class="text-muted mb-0">Regular bookings guaranteed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right – Partner Application Form -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+        <div class="card border-0 shadow-lg p-4">
+          <h5 class="card-title fw-bold mb-4">Start Your Application</h5>
+          <form id="partnerApplicationForm">
+            <!-- Hidden field to store selected expertise -->
+            <input type="hidden" name="selectedExpertise" id="selectedExpertise">
+            <div class="mb-3">
+              <label for="partnerName" class="form-label fw-semibold">Full Name</label>
+              <input type="text" class="form-control rounded-3" id="partnerName" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="partnerEmail" class="form-label fw-semibold">Email Address</label>
+              <input type="email" class="form-control rounded-3" id="partnerEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="partnerPhone" class="form-label fw-semibold">Phone Number</label>
+              <input type="tel" class="form-control rounded-3" id="partnerPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Service Expertise</label>
+              <p class="text-muted small mb-2">Select all areas where you have expertise (you can choose multiple)</p>
+              <div class="border rounded-3 p-3" id="expertiseCheckboxes">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Bike Repair" id="bikeRepair">
+                      <label class="form-check-label" for="bikeRepair">
+                        <i class="bi bi-bicycle me-2 text-warning"></i>Bike Repair
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Car Service" id="carService">
+                      <label class="form-check-label" for="carService">
+                        <i class="bi bi-car-front me-2 text-primary"></i>Car Service
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="AC Repair" id="acRepair">
+                      <label class="form-check-label" for="acRepair">
+                        <i class="bi bi-wind me-2 text-info"></i>AC Repair
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Laptop Repair" id="laptopRepair">
+                      <label class="form-check-label" for="laptopRepair">
+                        <i class="bi bi-laptop me-2 text-secondary"></i>Laptop Repair
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Plumbing" id="plumbing">
+                      <label class="form-check-label" for="plumbing">
+                        <i class="bi bi-droplet me-2 text-primary"></i>Plumbing
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Electrician" id="electrician">
+                      <label class="form-check-label" for="electrician">
+                        <i class="bi bi-lightning me-2 text-warning"></i>Electrician
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Appliance Repair" id="applianceRepair">
+                      <label class="form-check-label" for="applianceRepair">
+                        <i class="bi bi-tools me-2 text-secondary"></i>Appliance Repair
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Cleaning Services" id="cleaning">
+                      <label class="form-check-label" for="cleaning">
+                        <i class="bi bi-brush me-2 text-success"></i>Cleaning Services
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input expertise-checkbox" type="checkbox" value="Other" id="other">
+                      <label class="form-check-label" for="other">
+                        <i class="bi bi-three-dots me-2 text-muted"></i>Other
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Experience Fields -->
+            <div class="mb-3" id="experienceFields" style="display: none;">
+              <label class="form-label fw-semibold">Years of Experience</label>
+              <p class="text-muted small mb-3">Please specify your experience level for each selected expertise</p>
+              <div id="experienceContainer">
+                <!-- Experience fields will be dynamically added here -->
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="partnerCity" class="form-label fw-semibold">Service City</label>
+              <input type="text" class="form-control rounded-3" id="partnerCity" placeholder="Enter your service city" required>
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold rounded-3">
+              <i class="bi bi-send-fill me-2"></i> Apply Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     BENEFITS SECTION
+══════════════════════════════════════════════ -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Why Partner With QuickFix?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center p-4 border-0 shadow-sm h-100" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-people-fill text-warning fs-1 mb-3"></i>
+          <h5 class="card-title fw-bold mb-3">Growing Customer Base</h5>
+          <p class="card-text text-muted">Access thousands of customers looking for reliable repair services in your area.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4 border-0 shadow-sm h-100" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-tools text-warning fs-1 mb-3"></i>
+          <h5 class="card-title fw-bold mb-3">Business Support</h5>
+          <p class="card-text text-muted">Get marketing support, training, and tools to grow your business successfully.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4 border-0 shadow-sm h-100" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-shield-check text-warning fs-1 mb-3"></i>
+          <h5 class="card-title fw-bold mb-3">Insurance Coverage</h5>
+          <p class="card-text text-muted">Complete insurance coverage for you and your work. Work with peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     REQUIREMENTS SECTION
+══════════════════════════════════════════════ -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Partner Requirements</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-check-circle-fill text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-2">Valid Certification</h6>
+                <p class="text-muted mb-0">Professional certification in your service area</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-check-circle-fill text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-2">Tools & Equipment</h6>
+                <p class="text-muted mb-0">Basic tools and equipment for service delivery</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-check-circle-fill text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-2">Smartphone</h6>
+                <p class="text-muted mb-0">Android/iOS smartphone for our partner app</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="d-flex align-items-start gap-3">
+              <i class="bi bi-check-circle-fill text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-2">Transportation</h6>
+                <p class="text-muted mb-0">Reliable transportation to service locations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FAQ SECTION
+══════════════════════════════════════════════ -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Partner FAQs</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="accordion" id="partnerFaqAccordion">
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq1">
+                How much can I earn as a QuickFix partner?
+              </button>
+            </h2>
+            <div id="pfaq1" class="accordion-collapse collapse show" data-bs-parent="#partnerFaqAccordion">
+              <div class="accordion-body">
+                Our top partners earn ₹50,000-₹1,00,000 per month. Earnings depend on your skills, location, and the number of services you complete. You keep 70% of the service charge.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq2">
+                What are the working hours?
+              </button>
+            </h2>
+            <div id="pfaq2" class="accordion-collapse collapse" data-bs-parent="#partnerFaqAccordion">
+              <div class="accordion-body">
+                You set your own schedule! Work as much or as little as you want. Most partners work 4-8 hours per day, 5-6 days a week. Emergency services are available 24/7 for extra income.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq3">
+                Do I need to pay any fees to join?
+              </button>
+            </h2>
+            <div id="pfaq3" class="accordion-collapse collapse" data-bs-parent="#partnerFaqAccordion">
+              <div class="accordion-body">
+                No joining fees! We only deduct a small commission from each service. You'll need to purchase basic insurance coverage (₹500-₹1000/year) which we help arrange.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq4">
+                How long does the verification process take?
+              </button>
+            </h2>
+            <div id="pfaq4" class="accordion-collapse collapse" data-bs-parent="#partnerFaqAccordion">
+              <div class="accordion-body">
+                Background verification takes 2-3 days. Document verification is usually completed within 24 hours. Once approved, you can start receiving bookings immediately.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="500">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-semibold rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq5">
+                What support do you provide to partners?
+              </button>
+            </h2>
+            <div id="pfaq5" class="accordion-collapse collapse" data-bs-parent="#partnerFaqAccordion">
+              <div class="accordion-body">
+                We provide training, marketing support, customer acquisition, payment processing, insurance coverage, and 24/7 technical support. Our partner success team helps you grow your business.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CTA SECTION
+══════════════════════════════════════════════ -->
+<section class="bg-warning py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3" data-aos="fade-up">Ready to Start Earning?</h2>
+    <p class="lead mb-4 text-dark" data-aos="fade-up" data-aos-delay="100">Join thousands of successful partners who are building their future with QuickFix.</p>
+    <a href="#partnerApplication" class="btn btn-dark btn-lg px-5 fw-bold rounded-pill" data-aos="fade-up" data-aos-delay="200">
+      <i class="bi bi-rocket-fill me-2"></i> Apply Now
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>&copy; 2024 QuickFix. All rights reserved.</p>
+    <p>Making repairs quick, easy, and reliable.</p>
+    <div class="mt-3">
+      <a href="#" class="text-warning me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-warning me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-warning me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-warning"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Dynamic experience fields for multiple expertise selection
+  document.addEventListener('DOMContentLoaded', function() {
+    const expertiseCheckboxes = document.querySelectorAll('.expertise-checkbox');
+    const experienceFields = document.getElementById('experienceFields');
+    const experienceContainer = document.getElementById('experienceContainer');
+    const selectedExpertiseField = document.getElementById('selectedExpertise');
+    const form = document.getElementById('partnerApplicationForm');
+
+    function updateExperienceFields() {
+      const selectedExpertise = Array.from(expertiseCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value);
+
+      // Update hidden field
+      selectedExpertiseField.value = selectedExpertise.join(', ');
+
+      // Clear existing fields
+      experienceContainer.innerHTML = '';
+
+      if (selectedExpertise.length > 0) {
+        experienceFields.style.display = 'block';
+
+        selectedExpertise.forEach(expertise => {
+          const fieldDiv = document.createElement('div');
+          fieldDiv.className = 'mb-3 border rounded-3 p-3 bg-light';
+          fieldDiv.innerHTML = `
+            <label class="form-label fw-semibold">${expertise}</label>
+            <select class="form-select rounded-3" name="experience_${expertise.replace(/\s+/g, '_').toLowerCase()}" required>
+              <option selected disabled>Select experience level</option>
+              <option value="0-1">0-1 years</option>
+              <option value="1-3">1-3 years</option>
+              <option value="3-5">3-5 years</option>
+              <option value="5-10">5-10 years</option>
+              <option value="10+">10+ years</option>
+            </select>
+          `;
+          experienceContainer.appendChild(fieldDiv);
+        });
+      } else {
+        experienceFields.style.display = 'none';
+      }
+    }
+
+    // Add event listeners to checkboxes
+    expertiseCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', updateExperienceFields);
+    });
+
+    // Handle "Other" expertise input
+    const otherCheckbox = document.getElementById('other');
+    otherCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+        // Create input field for custom expertise
+        const customField = document.createElement('div');
+        customField.className = 'mt-2';
+        customField.innerHTML = `
+          <input type="text" class="form-control rounded-3" placeholder="Please specify your expertise" id="customExpertise" required>
+        `;
+        this.parentElement.appendChild(customField);
+
+        // Update the checkbox value when custom input changes
+        document.getElementById('customExpertise').addEventListener('input', function() {
+          otherCheckbox.value = this.value || 'Other';
+          updateExperienceFields();
+        });
+      } else {
+        // Remove custom input field
+        const customField = this.parentElement.querySelector('#customExpertise');
+        if (customField) {
+          customField.parentElement.removeChild(customField);
+        }
+        otherCheckbox.value = 'Other';
+        updateExperienceFields();
+      }
+    });
+
+    // Form validation
+    form.addEventListener('submit', function(e) {
+      const selectedCheckboxes = document.querySelectorAll('.expertise-checkbox:checked');
+      if (selectedCheckboxes.length === 0) {
+        e.preventDefault();
+        alert('Please select at least one area of expertise.');
+        return false;
+      }
+
+      // Check if all experience fields are filled
+      const experienceSelects = experienceContainer.querySelectorAll('select');
+      let allFilled = true;
+      experienceSelects.forEach(select => {
+        if (!select.value) {
+          allFilled = false;
+        }
+      });
+
+      if (!allFilled) {
+        e.preventDefault();
+        alert('Please specify your experience level for all selected expertise areas.');
+        return false;
+      }
+    });
+  });
+</script>
+</body>
+</html>
