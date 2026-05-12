@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC Repair Service – QuickFix – Expert Cooling Solutions</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- AOS for animations -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+      }
+      .service-icon {
+        font-size: 3rem;
+        color: #1976d2;
+      }
+      .pricing-card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+      }
+      .pricing-card:hover {
+        transform: translateY(-5px);
+      }
+      .step-icon {
+        width: 60px;
+        height: 60px;
+        background: #1976d2;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════ -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold fs-4 text-dark me-4" href="index.html">
+          🛠️ Quick<span class="text-primary">Fix</span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto gap-1">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-semibold active"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="bike-repair.html"
+                    ><i class="bi bi-bicycle me-2 text-warning"></i>Bike Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="car-service.html"
+                    ><i class="bi bi-car-front me-2 text-primary"></i>Car Service</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="ac-repair.html"
+                    ><i class="bi bi-wind me-2 text-info"></i>AC Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="refrigerator-repair.html"
+                    ><i class="bi bi-thermometer-snow me-2 text-info"></i
+                    >Refrigerator Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="washing-machine-repair.html"
+                    ><i class="bi bi-water me-2 text-info"></i>Washing Machine
+                    Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="tv-repair.html"
+                    ><i class="bi bi-tv me-2 text-secondary"></i>TV Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="microwave-repair.html"
+                    ><i class="bi bi-lightning me-2 text-warning"></i>Microwave
+                    Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="laptop-repair.html"
+                    ><i class="bi bi-laptop me-2 text-secondary"></i>Laptop
+                    Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mobile-repair.html"
+                    ><i class="bi bi-phone me-2 text-primary"></i>Mobile
+                    Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="water-purifier.html"
+                    ><i class="bi bi-droplet me-2 text-primary"></i>Water
+                    Purifier</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="electrical-repair.html"
+                    ><i class="bi bi-lightning me-2 text-warning"></i>Electrical
+                    Repair</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="plumbing-service.html"
+                    ><i class="bi bi-droplet me-2 text-primary"></i>Plumbing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="become-partner.html">Become Partner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right controls -->
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <button
+              class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 42px; height: 42px"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <button
+              class="btn btn-outline-secondary btn-sm rounded-circle position-relative d-flex align-items-center justify-content-center"
+              style="width: 42px; height: 42px"
+            >
+              <i class="bi bi-bell"></i>
+              <span
+                class="position-absolute top-0 end-0 badge rounded-pill bg-primary text-white"
+                style="font-size: 0.55rem; padding: 3px 5px"
+                >2</span
+              >
+            </button>
+            <a href="#" class="btn btn-primary fw-bold ms-1 rounded-pill px-3"
+              >Book Now</a
+            >
+            <button
+              class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 42px; height: 42px"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#profileSidebar"
+            >
+              <i class="bi bi-person-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════════════ -->
+    <section class="hero-bg py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+            <div class="service-icon mb-4">
+              <i class="bi bi-wind"></i>
+            </div>
+            <h1 class="display-4 fw-bold mb-3">
+              AC Repair <span class="text-primary">Service</span>
+            </h1>
+            <p class="lead mb-4 text-muted">
+              Professional air conditioning repair and maintenance services to keep your home cool and comfortable.
+            </p>
+            <a href="#bookingForm" class="btn btn-primary btn-lg rounded-pill px-4">
+              <i class="bi bi-calendar-check me-2"></i>Book Service Now
+            </a>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800">
+            <img src="https://via.placeholder.com/500x400/1976d2/ffffff?text=AC+Repair" alt="AC Repair" class="img-fluid rounded-4 shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     WHY CHOOSE US
+══════════════════════════════════════════════ -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2 class="fw-bold mb-3">Why Choose Our AC Repair Service?</h2>
+          <p class="text-muted fs-5">
+            Expert technicians, guaranteed satisfaction, and fast service.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-center p-4">
+              <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                <i class="bi bi-tools text-primary" style="font-size: 1.8rem;"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Expert Technicians</h5>
+              <p class="text-muted">Certified professionals with years of experience in AC repair.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-center p-4">
+              <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                <i class="bi bi-clock text-primary" style="font-size: 1.8rem;"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Fast Service</h5>
+              <p class="text-muted">Same-day service available for urgent AC repairs.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-center p-4">
+              <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                <i class="bi bi-shield-check text-primary" style="font-size: 1.8rem;"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Guaranteed Work</h5>
+              <p class="text-muted">100% satisfaction guarantee on all AC repair services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     PRICING PACKAGES
+══════════════════════════════════════════════ -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2 class="fw-bold mb-3">AC Repair Packages</h2>
+          <p class="text-muted fs-5">Choose the package that fits your needs.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card pricing-card h-100">
+              <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold">Basic Repair</h5>
+                <h3 class="text-primary fw-bold mb-3">₹499</h3>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Diagnosis & Inspection</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Minor Repairs</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Parts Replacement</li>
+                </ul>
+                <a href="#bookingForm" class="btn btn-primary rounded-pill">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card pricing-card h-100 border-primary">
+              <div class="card-body text-center p-4">
+                <span class="badge bg-primary mb-2">Most Popular</span>
+                <h5 class="card-title fw-bold">Complete Service</h5>
+                <h3 class="text-primary fw-bold mb-3">₹999</h3>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Full AC Cleaning</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Gas Refill</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Performance Check</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>6 Months Warranty</li>
+                </ul>
+                <a href="#bookingForm" class="btn btn-primary rounded-pill">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card pricing-card h-100">
+              <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold">Installation</h5>
+                <h3 class="text-primary fw-bold mb-3">₹1499</h3>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>New AC Installation</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Piping & Wiring</li>
+                  <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Testing & Commissioning</li>
+                </ul>
+                <a href="#bookingForm" class="btn btn-primary rounded-pill">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     REPAIR PROCESS
+══════════════════════════════════════════════ -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2 class="fw-bold mb-3">Our AC Repair Process</h2>
+          <p class="text-muted fs-5">Simple, transparent, and efficient steps.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-icon mb-3">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <h5 class="fw-bold">1. Call Us</h5>
+            <p class="text-muted">Book your service online or call us.</p>
+          </div>
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-icon mb-3">
+              <i class="bi bi-search"></i>
+            </div>
+            <h5 class="fw-bold">2. Diagnosis</h5>
+            <p class="text-muted">Our technician inspects your AC.</p>
+          </div>
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-icon mb-3">
+              <i class="bi bi-wrench"></i>
+            </div>
+            <h5 class="fw-bold">3. Repair</h5>
+            <p class="text-muted">We fix the issue with quality parts.</p>
+          </div>
+          <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="step-icon mb-3">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <h5 class="fw-bold">4. Testing</h5>
+            <p class="text-muted">Final testing and handover.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     CUSTOMER REVIEWS
+══════════════════════════════════════════════ -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2 class="fw-bold mb-3">What Our Customers Say</h2>
+          <p class="text-muted fs-5">Real feedback from satisfied customers.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex mb-3">
+                  <div class="flex-shrink-0">
+                    <img src="https://via.placeholder.com/50x50/1976d2/ffffff?text=U" alt="User" class="rounded-circle">
+                  </div>
+                  <div class="ms-3">
+                    <h6 class="mb-0">Rahul Sharma</h6>
+                    <div class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text text-muted">"Excellent AC repair service. Technician was professional and fixed the issue quickly. Highly recommended!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex mb-3">
+                  <div class="flex-shrink-0">
+                    <img src="https://via.placeholder.com/50x50/1976d2/ffffff?text=U" alt="User" class="rounded-circle">
+                  </div>
+                  <div class="ms-3">
+                    <h6 class="mb-0">Priya Patel</h6>
+                    <div class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text text-muted">"Very satisfied with the AC service. They cleaned it thoroughly and it's working perfectly now."</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex mb-3">
+                  <div class="flex-shrink-0">
+                    <img src="https://via.placeholder.com/50x50/1976d2/ffffff?text=U" alt="User" class="rounded-circle">
+                  </div>
+                  <div class="ms-3">
+                    <h6 class="mb-0">Amit Kumar</h6>
+                    <div class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text text-muted">"Fast response and professional service. My AC is cooling better than before. Great job!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════════ -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2 class="fw-bold mb-3">Frequently Asked Questions</h2>
+          <p class="text-muted fs-5">Common questions about our AC repair services.</p>
+        </div>
+
+        <div class="accordion" id="acFaq">
+          <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How long does AC repair take?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#acFaq">
+              <div class="accordion-body">
+                Most AC repairs take 1-3 hours depending on the issue. Complex repairs may take longer.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Do you provide warranty on repairs?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#acFaq">
+              <div class="accordion-body">
+                Yes, we provide 6 months warranty on all repair work and 1 year on parts replacement.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                What brands do you service?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#acFaq">
+              <div class="accordion-body">
+                We service all major AC brands including LG, Samsung, Voltas, Blue Star, Daikin, and more.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     BOOKING FORM
+══════════════════════════════════════════════ -->
+    <section class="py-5" id="bookingForm">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="fw-bold mb-4">Book Your AC Repair Service</h2>
+            <p class="text-muted mb-4">
+              Fill out the form below and we'll get back to you within 30 minutes.
+            </p>
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-telephone text-primary me-3 fs-4"></i>
+              <div>
+                <h6 class="mb-0">Call Us</h6>
+                <p class="text-muted mb-0">+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-envelope text-primary me-3 fs-4"></i>
+              <div>
+                <h6 class="mb-0">Email Us</h6>
+                <p class="text-muted mb-0">service@quickfix.com</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock text-primary me-3 fs-4"></i>
+              <div>
+                <h6 class="mb-0">Service Hours</h6>
+                <p class="text-muted mb-0">24/7 Available</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <form class="bg-light p-4 rounded-4 shadow">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="col-12">
+                  <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="col-12">
+                  <select class="form-select" required>
+                    <option value="">Select Service Type</option>
+                    <option>AC Repair</option>
+                    <option>AC Installation</option>
+                    <option>AC Maintenance</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="4" placeholder="Describe the issue..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100 rounded-pill">
+                    <i class="bi bi-send me-2"></i>Book Service
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-5 mb-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="fw-bold mb-3">🛠️ QuickFix</h5>
+            <p class="text-white text-opacity-75 small mb-0">
+              Your trusted partner for all home and vehicle repair needs. Fast, reliable, and affordable.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Services</h6>
+            <ul class="list-unstyled small">
+              <li><a href="ac-repair.html" class="text-white text-opacity-75 text-decoration-none">AC Repair</a></li>
+              <li><a href="refrigerator-repair.html" class="text-white text-opacity-75 text-decoration-none">Refrigerator</a></li>
+              <li><a href="washing-machine-repair.html" class="text-white text-opacity-75 text-decoration-none">Washing Machine</a></li>
+              <li><a href="laptop-repair.html" class="text-white text-opacity-75 text-decoration-none">Laptop Repair</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h6 class="fw-bold mb-3">Company</h6>
+            <ul class="list-unstyled small">
+              <li><a href="index.html" class="text-white text-opacity-75 text-decoration-none">Home</a></li>
+              <li><a href="about.html" class="text-white text-opacity-75 text-decoration-none">About</a></li>
+              <li><a href="become-partner.html" class="text-white text-opacity-75 text-decoration-none">Become Partner</a></li>
+              <li><a href="contact.html" class="text-white text-opacity-75 text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6 class="fw-bold mb-3">Newsletter</h6>
+            <p class="text-white text-opacity-75 small mb-3">
+              Subscribe to get updates on new services and special offers.
+            </p>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email" />
+              <button class="btn btn-primary" type="button">
+                <i class="bi bi-send"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-white bg-opacity-10" />
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="text-white text-opacity-75 small mb-0">
+              &copy; 2024 QuickFix. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-flex gap-3 justify-content-md-end mt-3 mt-md-0">
+              <a href="#" class="text-white text-opacity-75 text-decoration-none small">Privacy Policy</a>
+              <a href="#" class="text-white text-opacity-75 text-decoration-none small">Terms & Conditions</a>
+              <a href="#" class="text-white text-opacity-75 text-decoration-none small">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
